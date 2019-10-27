@@ -35,7 +35,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>SPC.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Snek.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Markdig, Version=0.15.2.0, Culture=neutral, PublicKeyToken=870da25a133885f8, processorArchitecture=MSIL">
@@ -103,6 +103,7 @@
   <ItemGroup>
     <None Include="Markdig.Wpf.nuspec" />
     <None Include="packages.config" />
+    <None Include="Snek.snk" />
     <None Include="SPC.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
