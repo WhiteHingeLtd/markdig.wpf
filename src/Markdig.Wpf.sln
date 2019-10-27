@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26608.5
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markdig.Wpf", "Markdig.Wpf\Markdig.Wpf.csproj", "{01E40FB5-B4E9-489D-98D5-4771DDC2D1D7}"
 EndProject
@@ -40,15 +40,12 @@ Global
 		{01E40FB5-B4E9-489D-98D5-4771DDC2D1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E40FB5-B4E9-489D-98D5-4771DDC2D1D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1523C4F0-A3E2-4440-9DD2-B3A3190FD2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1523C4F0-A3E2-4440-9DD2-B3A3190FD2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1523C4F0-A3E2-4440-9DD2-B3A3190FD2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1523C4F0-A3E2-4440-9DD2-B3A3190FD2C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{559E768F-424B-4E2A-8CBE-756819DE49EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{559E768F-424B-4E2A-8CBE-756819DE49EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{559E768F-424B-4E2A-8CBE-756819DE49EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{559E768F-424B-4E2A-8CBE-756819DE49EC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BD4D1C9A-C34F-419B-8A67-66EE79FB9ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD4D1C9A-C34F-419B-8A67-66EE79FB9ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD4D1C9A-C34F-419B-8A67-66EE79FB9ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD4D1C9A-C34F-419B-8A67-66EE79FB9ADA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
@@ -61,5 +58,8 @@ Global
 		{8DA306DF-1D05-4E0D-85E8-C966154D6FCD} = {7D346229-503E-49BF-8608-F33F36BC67FA}
 		{BD4D1C9A-C34F-419B-8A67-66EE79FB9ADA} = {E93FC46F-EBFB-4177-9D86-7534C4619827}
 		{76EFE234-7234-4ACE-B007-B88A0620F12B} = {8DA306DF-1D05-4E0D-85E8-C966154D6FCD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CD12E44-ACF2-4932-A83F-8FC790A9C8B2}
 	EndGlobalSection
 EndGlobal
