@@ -44,9 +44,7 @@ steps:
     packagesToPack: '**\\$(oldProjectFile)'
     versioningScheme: 'off'
 
-
 - task: DotNetCoreCLI@2
-  displayName: 'Old# Push to nuget feed (using dotnet)'
   inputs:
     command: 'push'
     packagesToPush: '../../**/$(oldProjectName)*.nupkg'
