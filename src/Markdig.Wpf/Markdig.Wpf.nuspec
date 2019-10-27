@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>$id$-SIGNED</id>
     <version>$version$</version>
     <title>$id$</title>
-    <authors>$author$</authors>
+    <authors>$author$, White Hinge</authors>
     <owners>$author$</owners>
     <licenseUrl>https://github.com/Kryptos-FR/markdig-wpf/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/Kryptos-FR/markdig-wpf</projectUrl>
