@@ -1,0 +1,53 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  oldProjectName: 'Markdig.Wpf'
+  oldProjectFile: 'Markdig.Wpf.csproj'
+  oldProjectSln: 'Markdig.Wpf.sln'
+
+steps:
+- task: NuGetToolInstaller@1
+  displayName: 'Install NuGet'
+
+
+- task: NuGetCommand@2
+  displayName: 'Old# Restore Packages'
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/$(oldProjectSln)'
+    restoreDirectory: 'packages'
+
+- task: VSBuild@1
+  displayName: 'Old# Build'
+  inputs:
+    solution: '**\\$(oldProjectSln)'
+    configuration: '$(buildConfiguration)'
+    platform: '$(buildPlatform)'
+    msbuildArchitecture: 'x64'
+
+- task: NuGetCommand@2
+  displayName: 'Old# Package nuget'
+  inputs:
+    command: 'pack'
+    packagesToPack: '**\\$(oldProjectFile)'
+    versioningScheme: 'off'
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'Old# Push to nuget feed (using dotnet)'
+  inputs:
+    command: 'push'
+    packagesToPush: '../../**/$(oldProjectName).*.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: '825df0d3-3282-4f66-b514-81618b93ef3b'
